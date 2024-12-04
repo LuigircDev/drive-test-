@@ -1,0 +1,10 @@
+package servicio.geolocalizacion.repositorios;
+
+
+import servicio.geolocalizacion.models.ZonaPeligrosa;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ZonaPeligrosaRepository extends JpaRepository<ZonaPeligrosa, Integer> {
+    Void setZonaPeligrosa(String externalProvidedZonaPeligrosa);
+}
+
